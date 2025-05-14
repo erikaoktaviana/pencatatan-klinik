@@ -2,12 +2,11 @@
     include_once '../connect.php';
 
     if(isset($_POST['submit']))
-    {    
-        $id_dokter = $_POST['id_dokter'];
+    {   
         $nama_dokter = $_POST['nama_dokter'];
         $telp = $_POST['telp'];
 
-        $query = "INSERT INTO dokter (id_dokter,nama_dokter, telp) VALUES ('$id_dokter','$nama_dokter','$telp')";
+        $query = "INSERT INTO dokter (nama_dokter, telp) VALUES ('$nama_dokter','$telp')";
         $result = mysqli_query($conn, $query); 
 
 

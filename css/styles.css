@@ -1,9 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url("./component/sidebar.css");
-@import url("./component/content.css");
-@import url("./component/card-product.css");
-@import url("./component/card-store.css");
-@import url("./variable.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 * {
 	font-family: "Poppins", sans-serif;

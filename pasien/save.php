@@ -3,13 +3,12 @@
 
     if(isset($_POST['submit']))
     {    
-        $id_pasien = $_POST['id_pasien'];
         $nama_pasien = $_POST['nama_pasien'];
         $jenis_kelamin = $_POST['jenis_kelamin'];
         $usia = $_POST['usia'];
         $alamat = $_POST['alamat'];
 
-        $query = "INSERT INTO pasien (id_pasien,nama_pasien,jenis_kelamin, usia, alamat) VALUES ('$id_pasien','$nama_pasien','$jenis_kelamin','$usia','$alamat')";
+        $query = "INSERT INTO pasien (nama_pasien,jenis_kelamin, usia, alamat) VALUES ('$nama_pasien','$jenis_kelamin','$usia','$alamat')";
         $result = mysqli_query($conn, $query); 
 
 

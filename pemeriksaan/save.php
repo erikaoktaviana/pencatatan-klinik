@@ -7,8 +7,8 @@ if (isset($_POST['submit'])) {
     $tensi = $_POST['tensi'];
     $keluhan = $_POST['keluhan'];
     $diagnosa = $_POST['diagnosa'];
-    $harga_resep = $_POST['harga_resep'];
-
+    $harga_resep = 0;
+    
     $query = "INSERT INTO pemeriksaan (id_pasien, id_dokter, tensi, keluhan, diagnosa, harga_resep) VALUES ('$id_pasien', '$id_dokter','$tensi','$keluhan', '$diagnosa', '$harga_resep')";
     $result = mysqli_query($conn, $query);
 
